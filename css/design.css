@@ -1,0 +1,74 @@
+:root {
+    /* --- CORES PRIMÁRIAS (Identidade Jovi) --- */
+    --color-primary: #0033FF;       /* Azul Jovi vibrante para CTAs e links */
+    --color-primary-dark: #0026CC;
+    --color-secondary: #000000;     /* Preto para textos principais e títulos */
+    
+    /* --- CORES NEUTRAS E SUPERFÍCIES --- */
+    --color-white: #FFFFFF;
+    --color-bg-light: #F7F7F7;      /* Fundo de seções secundárias */
+    --color-gray-100: #E5E5E5;      /* Bordas e divisores leves */
+    --color-gray-500: #666666;      /* Texto de apoio e parágrafos suaves */
+    --color-gray-900: #1D1D1F;      /* Texto principal e ícones */
+
+    /* --- TIPOGRAFIA --- */
+    /* A marca utiliza fontes limpas que remetem ao sistema OriginOS e FOS */
+    --font-family-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    --font-size-h1: 3.5rem;    /* 56px - Hero banners */
+    --font-size-h2: 2.5rem;    /* 40px - Títulos de seção */
+    --font-size-h3: 1.75rem;   /* 28px - Títulos de cards */
+    --font-size-body: 1rem;    /* 16px - Texto padrão */
+    --font-size-small: 0.875rem; /* 14px - Legal e rodapé */
+    
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+
+    /* --- ESPAÇAMENTO (Paddings & Margins) --- */
+    /* Sistema baseado em escala de 8px para consistência visual */
+    --spacing-xs: 0.5rem;  /* 8px */
+    --spacing-sm: 1rem;    /* 16px */
+    --spacing-md: 2rem;    /* 32px */
+    --spacing-lg: 4rem;    /* 64px */
+    --spacing-xl: 6rem;    /* 96px */
+    
+    /* --- DIMENSÕES (Widths & Heights) --- */
+    --container-max-width: 1200px;
+    --header-height: 72px;
+    --border-radius-sm: 8px;
+    --border-radius-lg: 20px;  /* Utilizado em botões e cards de produtos */
+
+    /* --- EFEITOS --- */
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --transition-default: all 0.3s ease;
+}
+
+/* --- EXEMPLO DE APLICAÇÃO --- */
+body {
+    font-family: var(--font-family-main);
+    background-color: var(--color-white);
+    color: var(--color-gray-900);
+    line-height: 1.5;
+}
+
+.button-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-lg);
+    font-weight: var(--font-weight-bold);
+    transition: var(--transition-default);
+    border: none;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.section-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-sm);
+}
