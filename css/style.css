@@ -45,6 +45,7 @@ body {
 .aviso-esquerda {
     background-color: var(--color-primary);
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     color: var(--color-white);

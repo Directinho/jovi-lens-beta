@@ -18,5 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('imagem').addEventListener('click', function() {
         alert('Imagem de ambiente - A imagem do ambiente é apenas ilustrativa para mostrar um exemplo, os filtros serão aplicados de acordo com o ambiente levando em conta a iluminação, o tipo de ambiente, o tipo de foto, e o que o usuário deseja fotografar, o JOVI Lens irá adaptar as opções para cada caso, e a imagem é apenas um exemplo.');
         });
-
+        document.getElementById('galeria').addEventListener('click', function() {
+        alert('Galeria - Ao clicar será aberto a galeria do dispositivo');
+        });
+          document.getElementById('rotacionar').addEventListener('click', function() {
+        alert('Rotacionar - Ao clicar será alternado entre a câmera fronta e traseira');
+        });
     });
